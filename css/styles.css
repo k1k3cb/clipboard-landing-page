@@ -1,0 +1,266 @@
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	/* display: block; */
+}
+
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+body {
+	font-family: "Bai Jamjuree", sans-serif;
+	font-size: 0.875rem;
+	font-weight: 400;
+	max-width: 1440px;
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.h2-heading {
+	font-size: 1.5625rem;
+}
+
+.h3-heading {
+	font-size: 1.25rem;
+}
+
+.p-text {
+	line-height: 1.5625rem;
+	color: #bbbfc1;
+}
+
+.header,
+.main,
+.footer {
+	padding: 0 2.5rem;
+	text-align: center;
+	overflow: hidden;
+}
+
+/* ############## header ############## */
+
+.header {
+	background-image: linear-gradient(transparent 65%, white 65%),
+		url("../assets/images/bg-header-mobile.png");
+
+	padding-top: 6.25rem;
+	margin-bottom: 9.375rem;
+}
+
+@media screen and (min-width: 768px) {
+	.header {
+		background-image: linear-gradient(transparent 65%, white 85%),
+			url("../assets/images/bg-header-desktop.png");
+	}
+}
+
+.logo-img {
+	width: 5rem;
+}
+
+.header__title {
+	font-weight: 600;
+}
+
+.header__description {
+	margin-bottom: 1.875rem;
+}
+
+@media screen and (min-width: 768px) {
+	.header__description {
+		padding: 0 20rem;
+		margin-bottom: 2.5rem;
+	}
+}
+
+.header__button {
+	display: block;
+	color: white;
+	margin-bottom: 1.25rem;
+	padding: 0.9375rem;
+	border-radius: 1.5625rem;
+	font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+	.header__button {
+		display: inline;
+		padding: 0.9375rem 2.5rem;
+		margin-right: 1.25rem;
+	}
+}
+
+.header__button--ios {
+	background-color: hsl(171, 66%, 44%);
+	box-shadow: 1px 3px 2px hsl(171, 66%, 50%);
+}
+
+.header__button--mac {
+	background-color: hsl(233, 100%, 69%);
+	box-shadow: 1px 3px 2px hsl(233, 70%, 61%);
+}
+
+/* ############## main ############## */
+
+.main__article-description {
+	margin-bottom: 3.125rem;
+}
+
+@media screen and (min-width: 768px) {
+	.main__article-description {
+		padding: 0 18.375rem;
+	}
+}
+
+.main__article-space {
+	margin: 3.4375rem 0;
+}
+
+@media screen and (min-width: 768px) {
+	.main__article-content--d-flex {
+		display: flex;
+		margin-bottom: 8.75rem;
+	}
+
+	.main__img-mac {
+		width: 50%;
+		position: relative;
+		left: -150px;
+	}
+
+	.main__mac-items {
+		width: 50%;
+		text-align: left;
+		padding-left: 5rem;
+		padding-right: 12.5rem;
+	}
+
+	.d-flex {
+		display: flex;
+	}
+
+	.main__mac-items--quick {
+		padding: 0 3.125rem;
+	}
+
+	.main__blacklist,
+	.main__snippets,
+	.main__preview {
+		width: 33%;
+	}
+}
+
+.main__tech-companies {
+	margin-bottom: 6.25rem;
+}
+
+.company__logos {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 2.1875rem 0;
+}
+
+@media screen and (min-width: 768px) {
+	.main__tech-companies {
+		display: flex;
+		padding: 0 1.5625rem;
+		align-items: center;
+	}
+}
+
+.main__header--bottom {
+	margin-bottom: 3.125rem;
+}
+
+@media screen and (min-width: 768px) {
+	.main__header--bottom {
+		margin-bottom: 10rem;
+	}
+}
+
+/* ############## footer ############## */
+
+.footer {
+	background-color: #f5f6f8;
+}
+
+@media screen and (min-width: 768px) {
+	.footer {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+}
+
+.logo--footer {
+	padding: 3.125rem 0;
+	margin-left: auto;
+	margin-right: auto;
+
+	width: 3.125rem;
+}
+
+@media screen and (min-width: 768px) {
+	.logo--footer {
+		margin: 0;
+	}
+
+	.footer__nav-list {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.footer__nav-list-item {
+		margin: 1.25rem 2.5rem;
+	}	
+}
+
+
+.footer__nav-list-item {
+	margin: 1.25rem 0;
+}
+
+
+.footer__social {
+	padding: 2.5rem 0;
+}
+
+@media screen and (min-width: 768px) {
+	.footer__social {
+		margin-left: 3.125rem;
+	}
+	.footer__nav-list-item {
+		margin: 1.25rem 20px;
+	}
+}
+
+.footer__social-icon {
+	margin: 0 0.9375rem;
+}
+
+.footer__social-icon:hover {
+	color: hsl(171, 66%, 44%);
+}
+
+.footer__nav-link {
+	text-decoration: none;
+	cursor: pointer;
+	color: #bbbfc1;
+}
+
+.footer__nav-link:hover {
+	color: hsl(171, 66%, 44%);
+}
